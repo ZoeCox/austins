@@ -10,8 +10,8 @@ h1 {
   height: 2em;
   background-color: #393e41;
   color: #edf2ef;
-  padding-top: 1em;
-  margin-top: -0.95em;
+  padding-top: 1.2em;
+  margin-top: -0.975em;
 }
 h1:hover {
   color: #e94f37;
@@ -92,7 +92,7 @@ hr {
 
 .tstandards {
   max-width: 55vw;
-  height: 8em;
+  height: 6em;
   margin-top: 0;
   border-radius: 5%;
   border: solid 0.15em black;
@@ -136,6 +136,15 @@ hr {
   text-align: center;
 }
 
+.tstandards-link {
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-link {
+  color: rgba(0, 0, 0, 0.75);
+}
+
 .tstandards-link:hover,
 .contact-link:hover {
   color: rgb(59, 173, 167);
@@ -155,14 +164,19 @@ hr {
     display: block;
     height: auto;
   }
+
+  .nav-items {
+    padding-bottom: 0.5em;
+  }
+
+  .company-name {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+  }
   footer {
     nav {
       display: block;
       height: auto;
     }
-  }
-
-  main {
-    font-size: 1em;
   }
 }
