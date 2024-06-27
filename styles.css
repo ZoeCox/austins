@@ -83,7 +83,7 @@ hr {
 }
 
 .van {
-  max-width: 45vw;
+  max-width: 35vw;
   border-radius: 25%;
   border: solid 0.15em black;
   position: relative;
@@ -102,6 +102,12 @@ hr {
   border-radius: 5%;
   border: solid 0.15em black;
 }
+
+/* .fb-page {
+  width: calc(100% - 4em);
+  max-width: 95vw;
+} */
+
 .image-gallery {
   border: solid 0.25em rgb(0, 0, 0);
   border-radius: 2.5%;
@@ -167,11 +173,18 @@ hr {
 
   .nav-items {
     padding-bottom: 0.5em;
+    padding-right: em;
+    padding-left: 1em;
   }
 
   .company-name {
     padding-left: 0.25em;
     padding-right: 0.25em;
+  }
+
+  .mobile-margin {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
   }
   footer {
     nav {
