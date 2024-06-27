@@ -1,3 +1,6 @@
+div {
+  display: unset;
+}
 header {
   width: 100%;
   padding-top: 0.5em;
@@ -50,6 +53,7 @@ a {
 
 body {
   margin: 0;
+  display: unset;
   background-color: #edf2ef;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.5em;
@@ -60,6 +64,11 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.at-austins {
+  margin-bottom: -0.15em;
+  margin-top: 0.15em;
 }
 
 .description {
@@ -83,7 +92,7 @@ hr {
 }
 
 .van {
-  max-width: 35vw;
+  max-width: 55vw;
   border-radius: 25%;
   border: solid 0.15em black;
   position: relative;
@@ -102,11 +111,6 @@ hr {
   border-radius: 5%;
   border: solid 0.15em black;
 }
-
-/* .fb-page {
-  width: calc(100% - 4em);
-  max-width: 95vw;
-} */
 
 .image-gallery {
   border: solid 0.25em rgb(0, 0, 0);
@@ -155,6 +159,7 @@ hr {
 .contact-link:hover {
   color: rgb(59, 173, 167);
   font-size: 107.5%;
+  text-decoration: none;
 }
 
 .foot {
@@ -165,6 +170,13 @@ hr {
   background-color: #393e41;
   color: #edf2ef;
 }
+
+@media (min-width: 701px) {
+  .van {
+    max-width: 30vw;
+  }
+}
+
 @media (max-width: 700px) {
   nav {
     display: block;
@@ -173,7 +185,6 @@ hr {
 
   .nav-items {
     padding-bottom: 0.5em;
-    padding-right: em;
     padding-left: 1em;
   }
 
@@ -186,10 +197,10 @@ hr {
     padding-right: 0.5em;
     padding-left: 0.5em;
   }
-  footer {
-    nav {
-      display: block;
-      height: auto;
-    }
+
+  footer,
+  nav {
+    display: block;
+    height: auto;
   }
 }
