@@ -10,10 +10,16 @@
   <header>
     <h1>Austin's</h1>
     <nav>
+      <!-- add aria labels for all buttons!! -->
+      <button class="hamburger hamburger-style">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </button>
+      <button class="hamburger-exit">x</button>
       <div class="nav-items">
         <a href="index.html" alt="Home Page">Home</a>
         <a href="services.html" alt="Services Page">Services Provided</a>
-        <a href="cctv.html" alt="Contact Page">CCTV</a>
         <a href="costings.html" alt="Pricing Page">Pricing</a>
         <a href="contact.html" alt="Contact Page">Contact Us</a>
       </div>
@@ -98,40 +104,45 @@
       </p>
       <hr />
       <h3 class="price-subsection">CCTV Services and Installations:</h3>
-      <ul class="description">
-        <li>DVR/NVR services</li>
-        <li>Hard disk replacement</li>
-        <li>Camera services/replacing Network/Internet connectivity</li>
-        <li>System upgrades cable services and replacements</li>
-        <li>Help and advice</li>
-      </ul>
-      <ul class="description">
-        <li>
-          Constant/motion record, Video/audio record, Day/night vision cameras
-        </li>
-        <li>
-          4/8/16 cameras systems and CCTV integration into current TV system
-        </li>
-        <li>
-          View on local/home PC network, via World Wide Web (Internet), and on
-          compatible smart-phones/Tablets
-        </li>
-        <li>
-          Installation systems comprising one or multiple cameras for
-          observation & security. Discreet and obvious camera locations are
-          available
-        </li>
-        <li>
-          Audio combines into CCTV DVR (Digital Video Recorder) NVR (Network
-          Video Recorder). This records onto the internal HD (hard drive) so as
-          to allow full weekly/monthly playback (depends on HD size/camera/audio
-          feeds)
-        </li>
-      </ul>
+      <h4>Please click below for more information:</h4>
+      <button class="expand-icon">^</button>
+      <button class="minimise-icon">^</button>
+      <div class="dropdown-text">
+        <ul class="description">
+          <li>DVR/NVR services</li>
+          <li>Hard disk replacement</li>
+          <li>Camera services/replacing Network/Internet connectivity</li>
+          <li>System upgrades cable services and replacements</li>
+          <li>Help and advice</li>
+        </ul>
+        <ul class="description">
+          <li>
+            Constant/motion record, Video/audio record, Day/night vision cameras
+          </li>
+          <li>
+            4/8/16 cameras systems and CCTV integration into current TV system
+          </li>
+          <li>
+            View on local/home PC network, via World Wide Web (Internet), and on
+            compatible smart-phones/Tablets
+          </li>
+          <li>
+            Installation systems comprising one or multiple cameras for
+            observation & security. Discreet and obvious camera locations are
+            available
+          </li>
+          <li>
+            Audio combines into CCTV DVR (Digital Video Recorder) NVR (Network
+            Video Recorder). This records onto the internal HD (hard drive) so
+            as to allow full weekly/monthly playback (depends on HD
+            size/camera/audio feeds)
+          </li>
+        </ul>
+      </div>
       <p class="description">
-        Data connection to broadband/Internet/home LAN (Local Area Network, your
-        home PC network) allows simplistic view/control over home PC systems or
-        even the internet!
+        Our CCTV systems can have data connection to broadband/Internet/home LAN
+        (Local Area Network, your home PC network) allows simplistic
+        view/control over home PC systems or even the internet!
       </p>
       <h4 class="mobile-margin">
         Services Call (Includes 1 hours Labour) <br />Cost: £68.00 <br />New
@@ -187,7 +198,9 @@
         instructions.
       </p>
     </main>
+    <script src="script.js"></script>
   </body>
+
   <footer class="foot">Austin's Aerials & CCTV Services - 2024 - <br /></footer>
   <!-- Website designed by Zoe Cox -->
 </html>

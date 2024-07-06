@@ -29,10 +29,41 @@ a {
   color: black;
 }
 
+.nav-items {
+  margin-top: -1.25em;
+}
+
 .nav-items a:hover {
   color: #edf2ef;
-  font-size: 110%;
   font-weight: bold;
+}
+
+.hamburger-line {
+  width: 0.75em;
+  height: 0.125em;
+  border: solid 0.05em black;
+  border-right-style: none;
+  border-left-style: none;
+  border-top-style: none;
+  position: relative;
+  margin: auto;
+}
+
+.hamburger-style {
+  font-size: 3em;
+  border: none;
+  background-color: transparent;
+  margin-right: -70%;
+  margin-top: -0.075em;
+  cursor: default;
+}
+
+.hamburger-exit {
+  margin-top: -1em;
+  font-size: 2em;
+  border: none;
+  background-color: transparent;
+  margin-right: -80%;
 }
 
 ::-webkit-scrollbar {
@@ -63,23 +94,6 @@ main {
   text-align: center;
 }
 
-/* .paul {
-
-  margin: auto;
-  position: absolute;
-  animation: paulSpin 5s alternate infinite;
-}
-
-@keyframes paulSpin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-} */
-
 .at-austins {
   margin-bottom: -0.15em;
   margin-top: 0.15em;
@@ -98,6 +112,25 @@ ul {
 li {
   list-style-type: circle;
   list-style-position: inside;
+}
+
+.expand-icon {
+  transform: rotate(180deg);
+}
+
+.expand-icon,
+.minimise-icon {
+  font-size: 2.5em;
+  font-weight: bold;
+  height: 2em;
+  width: 4em;
+  border: none;
+  color: grey;
+  background-color: transparent;
+  position: relative;
+  margin-top: -0.8em;
+  margin-bottom: -0.75em;
+  cursor: default;
 }
 
 hr {
@@ -189,18 +222,27 @@ hr {
   .van {
     max-width: 30vw;
   }
+  .hamburger {
+    display: none;
+  }
+  .nav-items {
+    display: inline-block !important;
+  }
+  .nav-items a:hover {
+    font-size: 110%;
+  }
 }
 
 @media (max-width: 700px) {
   nav {
-    display: block;
-    height: auto;
+    height: 2em;
   }
 
   .nav-items {
     padding-top: 0.15em;
-    padding-bottom: 0.75em;
-    padding-left: 1em;
+    padding-bottom: 0.25em;
+    flex-direction: column;
+    background-color: #6d7276;
   }
 
   .company-name {
@@ -213,8 +255,7 @@ hr {
     padding-left: 0.5em;
   }
 
-  footer,
-  nav {
+  footer {
     display: block;
     height: auto;
   }

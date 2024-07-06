@@ -11,10 +11,16 @@
   <header>
     <h1>Austin's</h1>
     <nav>
+      <!-- add aria labels for all buttons!! -->
+      <button class="hamburger hamburger-style">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </button>
+      <button class="hamburger-exit">x</button>
       <div class="nav-items">
         <a href="index.html" alt="Home Page">Home</a>
         <a href="services.html" alt="Services Page">Services Provided</a>
-        <a href="cctv.html" alt="Contact Page">CCTV</a>
         <a href="costings.html" alt="Pricing Page">Pricing</a>
         <a href="contact.html" alt="Contact Page">Contact Us</a>
       </div>
@@ -45,17 +51,23 @@
         domestic and communal properties.
       </p>
       <hr />
-      <h3 class="mobile-margin">Installations and Services for:</h3>
-      <ul class="description">
-        <li>Terrestrial TV and radio reception</li>
-        <li>Digital/Freeview/DAB/FM Satellite TV and radio reception</li>
-        <li>Freesat/Sky Signal distribution systems</li>
-        <li>Extension TV and Satellite outlets/connections.</li>
-        <li>
-          Internet connectivity for TV's/PC's. Telephone outlets/extensions
-        </li>
-        <li>Ethernet/Wireless connectivity CCTV services & Installations</li>
-      </ul>
+      <h3 class="mobile-margin">
+        Click below to find a list of our Installations and Services:
+      </h3>
+      <button class="expand-icon">^</button>
+      <button class="minimise-icon">^</button>
+      <div class="dropdown-text">
+        <ul class="description">
+          <li>Terrestrial TV and radio reception</li>
+          <li>Digital/Freeview/DAB/FM Satellite TV and radio reception</li>
+          <li>Freesat/Sky Signal distribution systems</li>
+          <li>Extension TV and Satellite outlets/connections.</li>
+          <li>
+            Internet connectivity for TV's/PC's. Telephone outlets/extensions
+          </li>
+          <li>Ethernet/Wireless connectivity CCTV services & Installations</li>
+        </ul>
+      </div>
       <p class="description">
         Based in Horsham West Sussex covering a general 15 mile radius. Further
         distances considered upon request.
@@ -146,6 +158,7 @@
       ></iframe>
       <br />
     </main>
+    <script src="script.js"></script>
   </body>
   <footer class="foot">Austin's Aerials & CCTV Services - 2024 - <br /></footer>
   <!-- Website designed by Zoe Cox : site under going maintenance and construction -->
