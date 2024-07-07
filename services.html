@@ -10,13 +10,12 @@
   <header>
     <h1>Austin's</h1>
     <nav>
-      <!-- add aria labels for all buttons!! -->
-      <button class="hamburger hamburger-style">
+      <button class="hamburger hamburger-style" aria-label="open menu dropdown">
         <div class="hamburger-line"></div>
         <div class="hamburger-line"></div>
         <div class="hamburger-line"></div>
       </button>
-      <button class="hamburger-exit">x</button>
+      <button class="hamburger-exit" aria-label="close dropdown menu">x</button>
       <div class="nav-items">
         <a href="index.html" alt="Home Page">Home</a>
         <a href="services.html" alt="Services Page">Services Provided</a>
@@ -67,13 +66,8 @@
         </li>
         <li>Members of the "Federation of Small Business"</li>
       </ul>
-      <h3 class="mobile-margin">
-        Please see below examples of our work and services:
-      </h3>
-      <div>
-        <button class="gallery-button forward">Forward</button>
-        <button class="gallery-button backward">Backward</button>
-      </div>
+      <h3 class="mobile-margin">Please see below examples of our work:</h3>
+
       <div class="image-gallery">
         <img
           class="demo-img img1"
@@ -95,6 +89,10 @@
           src="./images/ethernet.png"
           alt="back of a four port router"
         />
+      </div>
+      <div>
+        <button class="gallery-button backward"><</button>
+        <button class="gallery-button forward">></button>
       </div>
     </main>
     <script src="script.js"></script>

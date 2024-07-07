@@ -10,13 +10,12 @@
   <header>
     <h1>Austin's</h1>
     <nav>
-      <!-- add aria labels for all buttons!! -->
-      <button class="hamburger hamburger-style">
+      <button class="hamburger hamburger-style" aria-label="open menu dropdown">
         <div class="hamburger-line"></div>
         <div class="hamburger-line"></div>
         <div class="hamburger-line"></div>
       </button>
-      <button class="hamburger-exit">x</button>
+      <button class="hamburger-exit" aria-label="close dropdown menu">x</button>
       <div class="nav-items">
         <a href="index.html" alt="Home Page">Home</a>
         <a href="services.html" alt="Services Page">Services Provided</a>
@@ -105,8 +104,10 @@
       <hr />
       <h3 class="price-subsection">CCTV Services and Installations:</h3>
       <h4>Please click below for more information:</h4>
-      <button class="expand-icon">^</button>
-      <button class="minimise-icon">^</button>
+      <button class="expand-icon" aria-label="expand text">^</button>
+      <button class="minimise-icon" aria-label="minimise expanded text">
+        ^
+      </button>
       <div class="dropdown-text">
         <ul class="description">
           <li>DVR/NVR services</li>
