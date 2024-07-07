@@ -30,7 +30,7 @@ a {
 }
 
 .nav-items {
-  margin-top: -1.25em;
+  padding-top: 1em;
 }
 
 .nav-items a:hover {
@@ -160,7 +160,6 @@ hr {
 }
 
 .image-gallery {
-  border: solid 0.25em rgb(0, 0, 0);
   border-radius: 2.5%;
   width: calc(80% - 2em);
   height: 50%;
@@ -175,6 +174,17 @@ hr {
   object-fit: cover;
   border-radius: 5%;
   padding-top: 0.25em;
+}
+
+.gallery-button {
+  font-size: 1em;
+  width: 6em;
+  margin-bottom: 0.5em;
+}
+
+.forward {
+  left: 100%;
+  margin-right: 0.15em;
 }
 
 .price-subsection {
