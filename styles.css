@@ -200,7 +200,7 @@ hr {
   text-align: center;
 }
 
-.tstandards-link {
+.external-page {
   text-decoration: underline;
   text-decoration-color: rgba(0, 0, 0, 0.5);
 }
@@ -209,7 +209,7 @@ hr {
   color: rgba(0, 0, 0, 0.75);
 }
 
-.tstandards-link:hover,
+.external-page:hover,
 .contact-link:hover {
   color: rgb(59, 173, 167);
   font-size: 107.5%;
